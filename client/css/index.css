@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Forum&display=swap");
+html, body {
+  font-family: 'Forum', cursive;
+  font-size: calc(min(max(1rem, 4vw), 22px));
+  margin: 0px; }
+  html ::placeholder, body ::placeholder {
+    font-family: 'Forum', cursive;
+    color: #FFFFFF !important;
+    opacity: .7;
+    font-size: calc(min(max(1rem, 4vw), 1rem)); }
+  html a, body a {
+    color: white !important; }
+  html h1, body h1 {
+    font-size: calc(min(max(1rem, 4vw), 27px)); }
+
+@media (min-width: 1025px) {
+  .toggle {
+    display: none; } }
+
+#main {
+  padding: 16px; }
+
+.content {
+  overflow-x: hidden;
+  width: 100%; }
+
+header {
+  background-image: url(../img/hero-image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  height: 100%; }
+  header .pages-nav {
+    padding-left: 7%;
+    padding-top: 30px; }
+    header .pages-nav .nav-ul {
+      display: flex;
+      justify-content: space-between;
+      margin-right: 80%;
+      font-size: calc(min(max(1rem, 4vw), 1.4rem));
+      text-decoration: inherit;
+      color: inherit; }
+      header .pages-nav .nav-ul .nav-main-1 {
+        color: #FCB23E !important;
+        text-decoration: none !important;
+        margin-right: 4px; }
+        @media (max-width: 1025px) {
+          header .pages-nav .nav-ul .nav-main-1 {
+            display: none; } }
+        header .pages-nav .nav-ul .nav-main-1 :hover {
+          text-decoration: #FCB23E; }
+      header .pages-nav .nav-ul .nav-list-1 {
+        text-decoration: none !important; }
+        @media (max-width: 1025px) {
+          header .pages-nav .nav-ul .nav-list-1 {
+            display: none; } }
+  header .logo svg {
+    width: 37%;
+    height: auto;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%); }
+    @media (max-width: 800px) and (min-width: 500px) {
+      header .logo svg {
+        margin-top: 5vh;
+        margin-bottom: 1rem; } }
+    @media (max-width: 499px) {
+      header .logo svg {
+        margin-top: 2vh;
+        margin-bottom: 0.3rem; } }
+    @media (max-width: 499px) {
+      header .logo svg {
+        margin-top: 2vh;
+        margin-bottom: 0.3rem; } }
+    @media (max-width: 399px) {
+      header .logo svg {
+        margin-top: 1.2vh;
+        margin-bottom: 5px; } }
+  header .search-box {
+    margin-top: 2.7rem;
+    margin-bottom: 9rem; }
+    header .search-box .input-label {
+      display: flex;
+      justify-content: center; }
+      header .search-box .input-label .search-input {
+        background: rgba(255, 255, 255, 0.23);
+        border: 1px solid #FFFFFF;
+        height: 50px;
+        box-sizing: border-box;
+        border-radius: 15px;
+        padding: 1rem;
+        width: 80%;
+        color: #FFFFFF;
+        outline: none;
+        font-family: inherit; }
+        @media (max-width: 800px) {
+          header .search-box .input-label .search-input {
+            height: 40px; } }
+      header .search-box .input-label img {
+        position: relative;
+        right: 4%;
+        height: 45px;
+        margin-top: 3px; }
+        @media (max-width: 100px) {
+          header .search-box .input-label img {
+            right: 6%; } }
+    header .search-box .list-group {
+      margin-bottom: 1rem;
+      width: 80%;
+      left: 48.5%;
+      transform: translateX(-50%);
+      position: absolute;
+      z-index: 3; }
+
+.newpost-container {
+  background-image: url(../img/wooden-wall-changed2.png);
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  width: 100%;
+  display: flex;
+  padding-top: 10px; }
+  @media (max-width: 950px) {
+    .newpost-container {
+      display: flex;
+      flex-direction: column;
+      align-content: center; } }
+  .newpost-container .all-newposts {
+    margin-bottom: 10px; }
+    .newpost-container .all-newposts .newpost-h {
+      font-size: calc(min(max(1rem, 4vw), 2.7rem));
+      text-align: center;
+      color: white;
+      margin: 3px; }
+    .newpost-container .all-newposts .newpost {
+      box-shadow: 0.1rem 0.1rem 0.2rem 0.2rem rgba(0, 0, 0, 0.4);
+      background-color: #FFFFFF;
+      border-radius: 15px;
+      height: 200px;
+      width: 90%;
+      margin-left: calc(min(max(1rem, 4vw), 30px));
+      margin-top: 20px;
+      margin-bottom: 9px;
+      display: flex; }
+      @media (max-width: 600px) {
+        .newpost-container .all-newposts .newpost {
+          height: 170px; } }
+      @media (max-width: 450px) {
+        .newpost-container .all-newposts .newpost {
+          height: 150px; } }
+      @media (max-width: 300px) {
+        .newpost-container .all-newposts .newpost {
+          height: 130px; } }
+      @media (max-width: 150px) {
+        .newpost-container .all-newposts .newpost {
+          height: 110px; } }
+      .newpost-container .all-newposts .newpost img {
+        height: 200px;
+        width: 50%;
+        border-radius: 15px 0px 0px 15px; }
+        @media (max-width: 600px) {
+          .newpost-container .all-newposts .newpost img {
+            height: 170px; } }
+        @media (max-width: 450px) {
+          .newpost-container .all-newposts .newpost img {
+            height: 150px; } }
+        @media (max-width: 300px) {
+          .newpost-container .all-newposts .newpost img {
+            height: 130px; } }
+        @media (max-width: 150px) {
+          .newpost-container .all-newposts .newpost img {
+            height: 110px; } }
+      .newpost-container .all-newposts .newpost .text-part {
+        margin-left: 1rem;
+        margin-top: 1rem; }
+  .newpost-container .right-block {
+    width: 80%; }
+    @media (max-width: 950px) {
+      .newpost-container .right-block {
+        width: 100%; } }
+    .newpost-container .right-block .about-label .about-h {
+      font-size: calc(min(max(1rem, 4vw), 2.7rem));
+      text-align: center;
+      color: white;
+      margin: 3px; }
+    .newpost-container .right-block .about-label .about-me {
+      background-color: #FFFFFF;
+      box-shadow: 0.1rem 0.1rem 0.2rem 0.2rem rgba(0, 0, 0, 0.4);
+      margin: 20px;
+      border-radius: 15px;
+      padding: 10px; }
+      .newpost-container .right-block .about-label .about-me .profile-photo {
+        height: 170px;
+        border-radius: 50%;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%); }
+      .newpost-container .right-block .about-label .about-me p {
+        margin: 10px; }
+      .newpost-container .right-block .about-label .about-me .facebook {
+        height: 50px;
+        width: 50px;
+        margin: 10px; }
+    .newpost-container .right-block .write-author .contact-h {
+      font-size: calc(min(max(1rem, 4vw), 2.7rem));
+      text-align: center;
+      color: white;
+      margin: 3px; }
+    .newpost-container .right-block .write-author .form-block {
+      background-color: #FFFFFF;
+      margin: 20px;
+      height: 40%;
+      border-radius: 15px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0.1rem 0.1rem 0.2rem 0.2rem rgba(0, 0, 0, 0.4); }
+      .newpost-container .right-block .write-author .form-block p {
+        margin-top: 5px;
+        margin-bottom: 5px; }
+      .newpost-container .right-block .write-author .form-block input {
+        width: 100%;
+        margin-top: 5px;
+        margin-bottom: 5px; }
+      .newpost-container .right-block .write-author .form-block textarea {
+        width: 100%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        resize: none !important; }
+      .newpost-container .right-block .write-author .form-block button {
+        width: 100%;
+        margin-top: 5px;
+        margin-bottom: 5px; }
+
+footer {
+  background-color: #222;
+  height: 3rem; }
+  footer p {
+    text-align: center;
+    color: #818181;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); }
